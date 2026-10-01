@@ -1,0 +1,16 @@
+header{
+    background-color:lightblue;
+}
+
+body{
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.card{
+    background-color: white;
+    padding: 5px;
+    margin: 15px;
+    border: 2px solid black;
+    width: 200px;
+}
