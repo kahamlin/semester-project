@@ -3,7 +3,7 @@ header{
 }
 
 body{
-    background-color: white;
+    background-color: whitesmoke;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
@@ -14,3 +14,9 @@ body{
     border: 2px solid black;
     width: 200px;
 }
+
+.card-container{
+    display: flex;
+    gap: 20px;
+}
+
