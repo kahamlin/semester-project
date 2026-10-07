@@ -13,10 +13,104 @@ body{
     margin: 15px;
     border: 2px solid black;
     width: 200px;
+    text-align: center;
 }
 
 .card-container{
     display: flex;
     gap: 20px;
+}
+
+.organizations {
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.zeta {
+    background-color: #1261c9;
+    color: white;
+}
+
+.sigma {
+    background-color: #164b91;
+    color: white;
+}
+
+.aka {
+    background-color: #f58aaa;
+    color: #174a7c;
+}
+
+.dst {
+    background-color: #d41414;
+    color: white;
+}
+
+.alpha {
+    background-color: #000000; 
+    color: #CFB53B; 
+}
+
+.iota {
+    background-color: #4B2E1F;
+    color: #D4AF37; 
+}
+
+.sgrho {
+    background-color: #174A8B;
+    color: #F5C542;
+}
+
+.kappa {
+    background-color: #B5121B;
+    color: white;
+}
+
+.omega {
+    background-color: #542583;
+    color: #F5C542;
+}
+
+.card-info h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #173f73;
+}
+
+.card-info p {
+    color: #777;
+}
+
+.card-info button {
+    background: none;
+    color: #1769d1;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
