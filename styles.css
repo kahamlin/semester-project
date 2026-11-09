@@ -21,36 +21,7 @@ body{
     gap: 20px;
 }
 
-.organizations {
-    display: grid;
-    gap: 20px;
-    padding: 30px;
-}
-
-.card2 {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    background-color: white;
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.logo {
-    width: 120px;
-    height: 120px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 12px;
-
-    font-size: 30px;
-    font-weight: bold;
-}
-
+/* logo colors for each organization */
 .zeta {
     background-color: #1261c9;
     color: white;
@@ -96,21 +67,186 @@ body{
     color: #F5C542;
 }
 
+
+/* General page design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f8fc;
+    color: #073675;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #073675;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    gap: 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.navbar span {
+    color: #4a9bff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Page header */
+.page-header {
+    background-color: #0b4b92;
+    color: white;
+    padding: 45px 5%;
+}
+
+.page-header h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+}
+
+#orgSearch {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#searchMessage {
+    font-size: 14px;
+}
+
+/* Filter buttons */
+.filters {
+    display: flex;
+    gap: 10px;
+    padding: 20px 5%;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border: 1px solid #d7e3f2;
+    border-radius: 20px;
+    background-color: white;
+    color: #073675;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #073675;
+    color: white;
+}
+
+/* Organization cards */
+.organizations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 5% 50px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+.logo {
+    width: 100%;
+    height: 110px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .card-info h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #173f73;
+    color: #073675;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .card-info p {
-    color: #777;
+    color: #555;
 }
 
 .card-info button {
-    background: none;
-    color: #1769d1;
-    font-size: 16px;
-    font-weight: bold;
+    background-color: #073675;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.card-info button:hover {
+    background-color: #2877d4;
+}
+
+/* Responsive design */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .organizations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .organizations {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .card2 {
+        padding: 15px;
+    }
 }
 

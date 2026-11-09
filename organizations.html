@@ -5,21 +5,34 @@
         <link rel="stylesheet" href="styles.css">
         
     </head>
-    <nav>
+<body>
+    <nav class ="navbar">
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="organizations.html">Organizations</a>
+        <a href="events.html">Events</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="service.html">Service</a>
+    </div>    
     </nav>
-    <header>
-        <h2>Organizations</h2>
-        <h3>Explore the Greek organizations on campus.</h3>
+    <header class="page-header">
+    <h1>Organizations</h1>
+    <p>Explore the Greek organizations on campus.</p>
 
-        <input type="text" id="orgSearch" placeholder="Search Organizations">
-        <p id="searchMessage">Enter an organization name to search.</p>
-    </header>
-    <body>
+    <input type="text" id="orgSearch"
+           placeholder="Search organizations...">
+    <p id="searchMessage"></p>
+</header>
+<div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="sorority">Sororities</button>
+    <button class="filter-btn" data-filter="fraternity">Fraternities</button>
+    <button class="filter-btn" data-filter="nphc">NPHC</button>
+</div>
+
 <section class="organizations">
     <!-- Zeta Phi Beta -->
-    <div class="card2">
+    <div class="card2" data-category="sorority nphc">
         <div class="logo zeta">ZΦB</div>
         <div class="card-info">
             <h2>Zeta Phi Beta Sorority, Inc.</h2>
@@ -30,7 +43,7 @@
         </div>
     </div>
     <!-- Phi Beta Sigma -->
-    <div class="card2">
+    <div class="card2" data-category="fraternity nphc">
         <div class="logo sigma">ΦBΣ</div>
 
         <div class="card-info">
@@ -42,7 +55,7 @@
         </div>
     </div>
     <!-- AKA -->
-    <div class="card2">
+    <div class="card2" data-category="sorority nphc">
         <div class="logo aka">AKA</div>
         <div class="card-info">
             <h2>Alpha Kappa Alpha Sorority, Inc.</h2>
@@ -53,7 +66,7 @@
         </div>
     </div>
     <!-- DST -->
-    <div class="card2">
+    <div class="card2" data-category="sorority nphc">
         <div class="logo dst">ΔΣΘ</div>
         <div class="card-info">
             <h2>Delta Sigma Theta Sorority, Inc.</h2>
@@ -64,7 +77,7 @@
         </div>
     </div>
     <!-- Alpha Phi Alpha -->
-<div class="card2">
+    <div class="card2" data-category="fraternity nphc">
     <div class="logo alpha">AΦA</div>
     <div class="card-info">
         <h2>Alpha Phi Alpha Fraternity, Inc.</h2>
@@ -75,7 +88,7 @@
     </div>
 </div>
 <!-- Iota Phi Theta -->
-<div class="card2">
+<div class="card2" data-category="fraternity nphc">
     <div class="logo iota">ΙΦΘ</div>
     <div class="card-info">
         <h2>Iota Phi Theta Fraternity, Inc.</h2>
@@ -86,7 +99,7 @@
     </div>
 </div>
 <!-- Sigma Gamma Rho -->
-<div class="card2">
+<div class="card2" data-category="sorority nphc">
     <div class="logo sgrho">ΣΓΡ</div>
     <div class="card-info">
         <h2>Sigma Gamma Rho Sorority, Inc.</h2>
@@ -97,7 +110,7 @@
     </div>
 </div>
 <!-- Kappa Alpha Psi -->
-<div class="card2">
+<div class="card2" data-category="fraternity nphc">
     <div class="logo kappa">ΚΑΨ</div>
     <div class="card-info">
         <h2>Kappa Alpha Psi Fraternity, Inc.</h2>
@@ -108,7 +121,7 @@
     </div>
 </div>
 <!-- Omega Psi Phi -->
-<div class="card2">
+<div class="card2" data-category="fraternity nphc">
     <div class="logo omega">ΩΨΦ</div>
     <div class="card-info">
         <h2>Omega Psi Phi Fraternity, Inc.</h2>
