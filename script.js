@@ -1,14 +1,28 @@
 function viewProfile(organization){
     if(organization == "Zeta Phi Beta"){
         window.location.href ="zeta.html";
+    }else if(organization == "Alpha Kappa Alpha"){
+        window.location.href ="aka.html";
+    }else if(organization == "Delta Sigma Theta"){
+        window.location.href ="delta.html";
+    }else if(organization == "Sigma Gamma Rho"){
+        window.location.href ="sigma.html";
+    }else if(organization == "Phi Beta Sigma"){
+        window.location.href ="phi.html";
+    }else if(organization == "Kappa Alpha Psi"){
+        window.location.href ="kappa.html";
+    }else if(organization == "Iota Phi Theta"){
+        window.location.href ="iota.html";
     }
 }
 
-function viewAll(){
+function viewOrgs(){
     window.location.href = "organizations.html";
 }
 
-
+function viewEvents(){
+    window.location.href = "events.html";
+}
 
 const searchInput = document.querySelector("#orgSearch");
 const searchMessage = document.querySelector("#searchMessage");
