@@ -24,6 +24,7 @@ function viewEvents(){
     window.location.href = "events.html";
 }
 
+// Search and filter functionality for orgs
 const searchInput = document.querySelector("#orgSearch");
 const searchMessage = document.querySelector("#searchMessage");
 const organizations = document.querySelectorAll(".card2");
@@ -76,4 +77,34 @@ if (searchInput) {
 
     filterOrganizations();
 }
+
+// Search functionality for events
+const eventSearch = document.getElementById("eventSearch");
+const events = document.querySelectorAll(".event");
+const eventMessage = document.getElementById("eventMessage");
+
+if (eventSearch) {
+    eventSearch.addEventListener("input", function() {
+        const searchText = eventSearch.value.toLowerCase();
+        let found = 0;
+
+        events.forEach(function(event) {
+            const name = event.textContent.toLowerCase();
+
+            if (name.includes(searchText)) {
+                event.style.display = "flex";
+                found++;
+            } else {
+                event.style.display = "none";
+            }
+        });
+
+        if (found === 0) {
+            eventMessage.textContent = "No events found.";
+        } else {
+            eventMessage.textContent = "";
+        }
+    });
+}
+
 
