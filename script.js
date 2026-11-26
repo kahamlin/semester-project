@@ -107,4 +107,16 @@ if (eventSearch) {
     });
 }
 
+const rsvpButtons = document.querySelectorAll(".rsvp-btn");
+
+rsvpButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        if (button.textContent === "RSVP") {
+            button.textContent = "RSVP Selected";
+        } else {
+            button.textContent = "RSVP";
+        }
+    });
+});
+
 
